@@ -5,21 +5,32 @@
     <title>beep test</title>
     <style media="screen">
       html, body {
-        height: 90%;
-        font-size: 200%;
+        height: 98%;
+        font-size: 10vh;
+        user-select: none;
       }
       .body {
         height: 100%;
       }
       .title {
-        height: 20%;
+        height: 10%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
       }
+      .btn {
+        float: left;
+        width: 50%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .button {
-        height: 80%;
+        width: 95%;
+        height: 95%;
+        margin: 5%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -27,17 +38,31 @@
         border: 1% solid #333;
         color: #fff;
         transition: all .3s;
-        font-size: 2em;
+        font-size: 6vw;
       }
     </style>
     <script type="text/javascript">
-      var audio = new Audio('info-girl1-info-girl1-stop1.mp3');
+      var audio01 = new Audio('buzzer-opening1.mp3');
+      var audio02 = new Audio('line-girl1-line-girl1-tsudukihawebde1.mp3');
+      var audio03 = new Audio('info-girl1-info-girl1-start1.mp3');
+      var audio04 = new Audio('info-girl1-info-girl1-stop1.mp3');
     </script>
   </head>
   <body>
     <div class="body" style="width:100%;">
       <div class="title">Sound Play</div>
-      <div class="button" onclick="audio.play();">Tap Here</div>
+      <div class="btn">
+        <div class="button" onclick="audio01.play();">ブザー</div>
+      </div>
+      <div class="btn">
+        <div class="button" onclick="audio02.play();">続きはWebで</div>
+      </div>
+      <div class="btn">
+        <div class="button" onclick="audio03.play();">スタート!!</div>
+      </div>
+      <div class="btn">
+        <div class="button" onclick="audio04.play();">ストップ!!</div>
+      </div>
     </div>
   </body>
 </html>
