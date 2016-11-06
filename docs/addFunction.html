@@ -13,32 +13,33 @@
         height: 100%;
       }
       .title {
-        height: 12%;
+        height: 10%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
       }
       .btn {
-        width: 100%;
-        height: 80%;
+        float: left;
+        width: 50%;
+        height: 40%;
         display: flex;
         align-items: center;
         justify-content: center;
       }
       .button {
-        width: 100%;
-        height: 100%;
+        width: 95%;
+        height: 95%;
         margin: 5%;
+        border-radius: 3vh;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #333;
         border: 1% solid #333;
-        border-radius: 10vh;
         color: #fff;
         transition: all .3s;
-        font-size: 15vw;
+        font-size: 6vw;
       }
       .link {
         width: 100%;
@@ -56,18 +57,30 @@
         font-size: 15px;
       }
     </style>
-    <script type="text/javascript">;
-      var audio = new Audio('sound/info-girl1-info-girl1-stop1.mp3');
+    <script type="text/javascript">
+      var audio01 = new Audio('sound/buzzer-opening1.mp3');
+      var audio02 = new Audio('sound/line-girl1-line-girl1-tsudukihawebde1.mp3');
+      var audio03 = new Audio('sound/info-girl1-info-girl1-start1.mp3');
+      var audio04 = new Audio('sound/info-girl1-info-girl1-stop1.mp3');
     </script>
   </head>
   <body>
     <div class="body" style="width:100%;">
       <div class="title">Sound Play</div>
       <div class="btn">
-        <div class="button" onclick="audio.play();">Tap Here</div>
+        <div class="button" onclick="audio01.play();">ブザー</div>
+      </div>
+      <div class="btn">
+        <div class="button" onclick="audio02.play();">続きはWebで</div>
+      </div>
+      <div class="btn">
+        <div class="button" onclick="audio03.play();">スタート!!</div>
+      </div>
+      <div class="btn">
+        <div class="button" onclick="audio04.play();">ストップ!!</div>
       </div>
       <div class="link">
-        <a href="addFunction.html">Extras</a>
+        <a href="index.html">Back</a>
       </div>
     </div>
     <div class="copyright">
